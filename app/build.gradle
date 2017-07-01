@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.oldestmonk.droidsudsolve"
+        minSdkVersion 8
+        targetSdkVersion 17
+
+        ndk {
+            moduleName "exactcaller"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path '../../../Dropbox/workspace/DroidSudSolve/jni/Android.mk'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:gridlayout-v7:18.0.0'
+    compile 'com.android.support:support-v4:18.0.0'
+}

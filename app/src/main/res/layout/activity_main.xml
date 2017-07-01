@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:id="@+id/sudokutable"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="64" >
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/numtable"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="24" >
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/actionbtntable"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12" >
+    </TableLayout>
+</LinearLayout>
