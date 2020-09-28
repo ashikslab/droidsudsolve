@@ -1,6 +1,6 @@
 Sudoku solver for Android (open source)
 
-This sudoku solver is written by Ashik (ashik@ashikslab.in)
+This sudoku solver is written by Ashik (a@shik.in)
 using the libexact software library for solving exact cover problems.
 
 libexact was developed by  Petteri Kaski and Olli Pottonen
